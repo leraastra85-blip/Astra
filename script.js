@@ -1,10 +1,8 @@
-// fullPage.js
 new fullpage('#fullpage', {
     autoScrolling: true,
     navigation: true
 });
 
-// Таймер
 const weddingDate = new Date("2026-04-25T00:00:00");
 const startDate = new Date();
 const totalTime = weddingDate - startDate;
