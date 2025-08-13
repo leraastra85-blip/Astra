@@ -9,11 +9,12 @@ body {
 }
 
 .last-slide .overlay {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     padding: 20px;
     border-radius: 10px;
     max-width: 400px;
     text-align: center;
+    margin: auto;
 }
 
 form {
@@ -27,6 +28,7 @@ input, textarea {
     border: 1px solid #000;
     background: #fff;
     color: #000;
+    resize: none;
 }
 
 button {
@@ -35,22 +37,4 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
-}
-
-.timer-container {
-    width: 80%;
-    height: 20px;
-    background: #eee;
-    margin: 20px auto;
-}
-
-#progress-bar {
-    height: 100%;
-    background: #000;
-    width: 0%;
-}
-
-#time-left {
-    margin-top: 10px;
-    font-weight: bold;
 }
