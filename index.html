@@ -11,40 +11,33 @@
 
 <div id="fullpage">
 
-    <!-- Слайд 1 -->
+    <!-- Слайды 1-4 -->
     <div class="section slide" style="background-image: url('img/slide_1.jpg');"></div>
-
-    <!-- Слайд 2 -->
     <div class="section slide" style="background-image: url('img/slide_2.jpg');"></div>
-
-    <!-- Слайд 3 -->
     <div class="section slide" style="background-image: url('img/slide_3.jpg');"></div>
-
-    <!-- Слайд 4 -->
     <div class="section slide" style="background-image: url('img/slide_4.jpg');"></div>
 
-    <!-- Слайд 5 — форма и таймер -->
+    <!-- Слайд 5 — только форма -->
     <div class="section slide last-slide" style="background-image: url('img/slide_5.jpg');">
         <div class="overlay">
-            <h2>Будем рады, если вы подтвердите своё присутствие</h2>
+            <h2>Напишите нам сообщение</h2>
             <form action="https://formspree.io/f/movlyzkp" method="POST">
                 <input type="text" name="Имя" placeholder="Ваше имя" required>
-                <input type="number" name="Гости" placeholder="Количество гостей" required>
-                <textarea name="Комментарий" placeholder="Комментарий"></textarea>
+                <textarea name="Сообщение" placeholder="Ваше сообщение" required></textarea>
                 <button type="submit">Отправить</button>
             </form>
-
-            <h3>До встречи!</h3>
-            <div class="timer-container">
-                <div id="progress-bar"></div>
-            </div>
-            <p id="time-left"></p>
         </div>
     </div>
 
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
-<script src="script.js"></script>
+<script>
+    new fullpage('#fullpage', {
+        autoScrolling: true,
+        navigation: true
+    });
+</script>
+
 </body>
 </html>
